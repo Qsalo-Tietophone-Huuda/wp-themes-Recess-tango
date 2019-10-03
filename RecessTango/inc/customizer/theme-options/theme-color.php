@@ -19,6 +19,7 @@ $wp_customize->add_control( 'RecessTango_theme_options[theme_color]', array(
 	'choices'			  => array(
 		'blue'			=> esc_html__( 'Blue', 'RecessTango' ),
 		'curry-green'			=> esc_html__( 'Curry green', 'RecessTango' ),
+		'DarkTempo'			=> esc_html__( 'Dark Tempo', 'RecessTango' ),
 		'dark-blue'		=> esc_html__( 'Dark Blue', 'RecessTango' ),
 		),
 ) );
