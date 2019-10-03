@@ -70,7 +70,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Normalize
 --------------------------------------------------------------*/
 html {
-	font-family: helvetica, sans-serif;
+	font-family: Grenze, helvetica, sans-serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust:     100%;
 }
@@ -284,6 +284,11 @@ th {
 # Typography
 --------------------------------------------------------------*/
 @font-face{
+    font-family: Grenze;
+    src: url(assets/plugins/fonts/Grenze-Regular.ttf);
+    font-weight: normal;
+}
+@font-face{
     font-family: Lobster;
     src: url(assets/plugins/fonts/Lobster-Regular.ttf);
     font-weight: normal;
@@ -423,7 +428,7 @@ html {
 body {
 	background: rgba(11, 12, 16, 1); /* Fallback for when there is no custom background color defined. */
 	background-image:linear-gradient(45deg, rgba(11,12,16,1) 0%,rgba(32,40,51,1) 50%,rgba(11,12,16,1) 51%,rgba(32,40,51,1) 100%);
-    font-family:BigShouldersDisplay-Regular, 'Oxygen', sans-serif;
+    font-family:Grenze, 'Oxygen', sans-serif;
     overflow-x: hidden;
     font-size:1.4em;
     letter-spacing:0.11em;
