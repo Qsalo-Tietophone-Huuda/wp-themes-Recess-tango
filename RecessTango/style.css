@@ -2818,11 +2818,20 @@ li.share-end {
         background-position: 100% 100%;
     }
 #featured-category{
+    animation: 3.5s ease-out 0s 1 LoadIn;
     background-image:url(assets/uploads/featured_category.webp);
     background-attachment:fixed;
     background-size:cover;
-    border: 2em solid rgba(102, 252, 241, 0.23);
+    border: 0.2em solid rgba(102, 252, 241, 0.23);
     box-shadow: 0em -0.25em 1em rgba(32, 40, 51, 0.23);
+}
+@keyframes LoadIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
 }
 #featured-category .featured-post-title {
     position: absolute;
