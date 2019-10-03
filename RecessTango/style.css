@@ -315,7 +315,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: Georgia, Times, "Times New Roman", sans-serif;
+	font-family: Lobster, Georgia, Times, "Times New Roman", sans-serif;
 	line-height: 1.4em;
 	font-weight: 400;
 }
@@ -370,8 +370,8 @@ address {
 }
 
 pre {
-	background: #eee;
-	font-family: "Courier 10 Pitch", Courier, monospace;
+	background: rgba(11, 12, 16, 1);
+	font-family: BigShouldersDisplay-Regular, "Courier 10 Pitch", Courier, monospace;
 	font-size: 15px;
 	font-size: 0.9375rem;
 	line-height: 1.6;
@@ -385,7 +385,7 @@ code,
 kbd,
 tt,
 var {
-	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-family: BigShouldersDisplay-Regular, Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 	font-size: 15px;
 	font-size: 0.9375rem;
 }
@@ -423,7 +423,7 @@ html {
 body {
 	background: rgba(11, 12, 16, 1); /* Fallback for when there is no custom background color defined. */
 	background-image:linear-gradient(45deg, rgba(11,12,16,1) 0%,rgba(32,40,51,1) 50%,rgba(11,12,16,1) 51%,rgba(32,40,51,1) 100%);
-    font-family: 'Oxygen', sans-serif;
+    font-family:Lobster, 'Oxygen', sans-serif;
     overflow-x: hidden;
 }
 
@@ -797,7 +797,7 @@ ul.sub-menu {
     right: 0;
 }
 .site-branding .site-title {
-    font-family: Helvetica, Georgia, Times, "Times New Roman", sans-serif;
+    font-family: BigShouldersDisplay-Regular, Helvetica, Georgia, Times, "Times New Roman", sans-serif;
     font-size: 22px;
     letter-spacing: 0.11em;
     margin-top: 0;
@@ -975,7 +975,7 @@ ul.sub-menu li.menu-item-has-children > a:after {
     height: 40px;
     padding: 0 35px 0 15px;
     font-weight: 100;
-    font-family: 'Oxygen', sans-serif;
+    font-family:Lobster, 'Oxygen', sans-serif;
 }
 #sidr-id-search ::-webkit-input-placeholder {
     color: rgba(197, 198, 200, 1);
@@ -1420,7 +1420,7 @@ section:before,
 	font-size: 22px;
 	padding: 20px;
 	margin-bottom: 15px;
-	font-family: Georgia, Times, "Times New Roman", sans-serif;
+	font-family: BigShouldersDisplay-Regular, Georgia, Times, "Times New Roman", sans-serif;
 	position: relative;
 	overflow: hidden;
 }
@@ -1463,7 +1463,7 @@ section:before,
 }
 .widget_topcolleges_slider .slider-item > ul > li a,
 .widget_tp_top_affiliation_widget ul > li a {
-	font-family: Georgia, Times, "Times New Roman", sans-serif;
+	font-family: BigShouldersDisplay-Regular, Georgia, Times, "Times New Roman", sans-serif;
     font-size: 16px;
     color: rgba(102, 252, 241, 1);
     text-transform: capitalize;
@@ -2368,7 +2368,7 @@ header.entry-header {
     margin-bottom: 20px;
 }
 .entry-title {
-    font-family: Helvetica, Georgia, Times, "Times New Roman", sans-serif;
+    font-family: Lobster, Helvetica, Georgia, Times, "Times New Roman", sans-serif;
     font-size: 48px;
     font-weight: 100;
     letter-spacing:0.09em;
@@ -3008,7 +3008,7 @@ nav.portfolio-filter ul li a {
     font-size: 16px;
     font-weight: 400;
     padding: 0 20px;
-    font-family: Georgia, Times, "Times New Roman", sans-serif;
+    font-family: BigShouldersDisplay-Regular, Georgia, Times, "Times New Roman", sans-serif;
 }
 ul.tabs:before,
 ul.tabs:after {
@@ -3669,7 +3669,7 @@ p.form-submit input[type="submit"]:hover {
 }
 span.number {
 	font-size: 20px;
-	font-family: Georgia, Times, "Times New Roman", sans-serif;
+	font-family:Heebo-Bold, Georgia, Times, "Times New Roman", sans-serif;
 }
 #blog .black-overlay {
     opacity: 0.6;
