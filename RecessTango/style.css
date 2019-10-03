@@ -3392,12 +3392,12 @@ time:before {
 }
 .article-desc p {
     font-size: 14px;
-    color: #757575;
+    color: rgba(197, 198, 200, 1);
 }
 .price-tag {
     padding: 5px 15px;
     font-size: 12px;
-    color: #fff;
+    color: rgba(197, 198, 200, 1);
     bottom: 25px;
 }
 .price-tag:before,
@@ -3458,7 +3458,7 @@ span.woocommerce-Price-amount.amount {
 }
 .price-tag:hover,
 .price-tag:focus {
-	color: #fff;
+	color: rgba(197, 198, 200, 1);
 }
 #trending-courses .courses-list .price-tag {
     position: absolute;
@@ -3474,7 +3474,7 @@ span.woocommerce-Price-amount.amount {
     line-height: 25px;
 }
 #trending-courses .course-title a {
-	color: #444;
+	color: rgba(102, 252, 241, 1);
 	display: block;
 }
 .course-desc {
@@ -3484,7 +3484,7 @@ span.woocommerce-Price-amount.amount {
     display: block;
 }
 #trending-courses .courses-list .course-footer-content {
-    color: #777;
+    color: rgba(197, 198, 200, 1);
 }
 .star-rating li {
     display: inline-block;
@@ -3507,7 +3507,7 @@ ul.star-rating li.post-ratings em {
 }
 .courses-list .upcoming-courses {
     text-align: center;
-    color: #fff;
+    color: rgba(197, 198, 200, 1);
     padding: 50px 30px 40px 30px;
     min-height: 300px;
 }
@@ -3525,13 +3525,13 @@ ul.star-rating li.post-ratings em {
 }
 #trending-courses .courses-list .upcoming-courses p {
     font-size: 14px;
-    color: #fff;
+    color: rgba(197, 198, 200, 1);
 }
 #trending-courses .courses-list .view-more {
     margin-top: 35px;
 }
 #trending-courses .courses-list .view-more .btn {
-    color: #fff;
+    color: rgba(102, 252, 241, 1);
     letter-spacing: 1px;
     font-size: 14px;
     padding: 12px 28px;
@@ -3540,19 +3540,19 @@ ul.star-rating li.post-ratings em {
 	background-color: #59A2D4;
 }
 .btn-border-white {
-    border: 2px solid #fff;
+    border: 2px solid rgba(70, 162, 159, 1);
 }
 .price-tag.free {
-	background-color: #37C365;
+	background-color: rgba(11, 12, 16, 1);
 }
 .courses-list .course-footer-content .pull-right small {
     font-size: 14px;
 }
 span.tp-course-duration {
-    color: rgb(240, 160, 5);
+    color: rgba(197, 198, 200, 1);
 }
 .archive .course-footer-content .pull-right span {
-   color: rgb(240, 160, 5);
+   color: rgba(197, 198, 200, 1);
 }
 #trending-courses .list-view .course-item.has-post-thumbnail .image-wrapper {
     width: 40%;
@@ -3583,7 +3583,7 @@ span.tp-course-duration {
 #trending-courses .pull-left small,
 .shop-products .pull-left .woocommerce-result-count {
     font-size: 15px;
-    color: #FFFFB5;
+    color: rgba(197, 198, 200, 1);
     display: inline-block;
     padding: 10px 0;
 }
@@ -3595,15 +3595,15 @@ p.woocommerce-result-count {
     margin: 0;
 }
 .load-more {
-    color: #999;
+    color: rgba(197, 198, 200, 1);
     border: 1px solid #c6c7cb;
     display: inline-block;
     padding: 10px 25px;
 }
 .load-more:hover,
 p.form-submit input[type="submit"]:hover {
-	border: 1px solid;
-	color: #260D0A;
+	border: 1px solid rgba(70, 162, 159, 1);
+	color: rgba(70, 162, 159, 1);
 }
 .woocommerce ul.products li.product,
 .woocommerce-page ul.products li.product {
@@ -3643,18 +3643,18 @@ p.form-submit input[type="submit"]:hover {
     height: 125px;
     margin: auto;
     text-align: center;
-    color: #fff;
+    color: rgba(197, 198, 200, 1);
     width: 100%;
     padding: 0 50px;
 }
 #blog .row .column-wrapper:nth-child(1n) .category-name {
-	background-color: #FE5DcC;
+	background-color: rgba(11, 12, 16, 1);
 }
 #blog .row .column-wrapper:nth-child(2n) .category-name {
-	background-color: #5EABDF;
+	background-color: rgba(11, 12, 16, 1);
 }
 #blog .row .column-wrapper:nth-child(3n) .category-name {
-	background-color: #37C365;
+	background-color: rgba(11, 12, 16, 1);
 }
 .blog-content h3 {
     font-size: 22px;
@@ -3664,7 +3664,7 @@ p.form-submit input[type="submit"]:hover {
 }
 .blog-content h3 a,
 .blog-content time {
-	color: #fff;
+	color: rgba(102, 252, 241, 1);
 	display: block;
 }
 span.number {
@@ -3678,7 +3678,7 @@ article.post h2.entry-title,
 article.post h2.entry-title a {
     font-size: 22px;
     font-weight: 400;
-    color: #000;
+    color: rgba(102, 252, 241, 1);
     display: block;
     line-height: 28px;
 }
@@ -3717,7 +3717,7 @@ span.comments-links a:before {
     margin: 0;
     width: 100%;
     background: linear-gradient(to top,rgba(0, 0, 0, 0.77) 0,rgba(0, 0, 0, 0.03) 100%);
-    color: #fff;
+    color: rgba(197, 198, 200, 1);
 }
 .single .entry-meta>span:after {
     content: "";
@@ -3760,17 +3760,17 @@ span.comments-links a:before {
     text-transform: capitalize;
 }
 .single .tp-education-meta .box-meta span {
-    color: #777;
+    color: rgba(197, 198, 200, 1);
     display: table-row;
 }
 .single .tp-education-meta .box-meta span.tp-course-counselors {
     display: block;
 }
 .single .tp-education-meta .box-meta a {
-    color: rgb(240, 160, 5);
+    color: rgba(102, 252, 241, 1);
 }
 .single .tp-education-meta .box-meta a:hover {
-    color: #555;
+    color: rgba(70, 162, 159, 1);
 }
 .box-meta:last-child {
     border-right: none;
@@ -3792,16 +3792,16 @@ span.comments-links a:before {
 }
 .has-post-thumbnail.hentry p.entry-meta a,
 .has-post-thumbnail.hentry p.entry-meta time {
-    color: #fff;
+    color: rgba(102, 252, 241, 1);
 }
 .hentry p.entry-meta > span:not(:last-child) {
 	padding-right: 20px;
 }
 .hentry p.entry-meta > span:not(:last-child):after {
     content: "";
-    background-color: #ccc;
+    background-color: rgba(11, 12, 16, 1);
     display: inline-block;
-    color: #fff;
+    color: rgba(197, 198, 200, 1);
     width: 1px;
     height: 20px;
     vertical-align: middle;
@@ -3814,7 +3814,7 @@ span.comments-links a:before {
 .blog #primary article.hentry:not(:last-child),
 .archive #primary article.hentry:not(:last-child),
 .search #primary article.hentry:not(:last-child) {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid rgba(102, 252, 241, 1);
 }
 .post-type-archive-tp-team .course-footer-content .pull-right small,
 .post-type-archive-tp-class .price-tag small,
@@ -3825,25 +3825,25 @@ span.comments-links a:before {
 	margin-bottom: 40px;
 }
 .btn-blue {
-    background-color: #5EABDF;
+    background-color: rgba(11, 12, 16, 1);
 }
 .btn-blue:hover,
 .btn-blue:focus {
-    background-color: #333;
-    color: #fff;
+    background-color: rgba(32, 40, 51, 1);
+    color: rgba(102, 252, 241, 1);
 }
 .archive.category span.cat-links {
     display: inline-block;
 }
 .search.search-results span.cat-links a,
 .archive.category span.cat-links a {
-    background-color: #fe5dcc;
+    background-color: rgba(11, 12, 16, 1);
    padding: 3px 25px;
-    color: #fff;
+    color: rgba(102, 252, 241, 1);
 }
 .search.search-results span.cat-links a:hover,
 .archive.category span.cat-links a:hover {
-    background-color: #333;
+    background-color: rgba(70, 162, 159, 1);
 }
 .hentry .read-more {
     display: inline-block;
@@ -3859,10 +3859,10 @@ span.comments-links a:before {
 	margin-bottom: 0;
 }
 span.cat-links .category-name {
-    background-color: #fe5dcc;
+    background-color: rgba(11, 12, 16, 1);
 }
 span.cat-links .category-name:hover {
-    background-color: #333;
+    background-color: rgba(32, 40, 51, 1);
 }
 .navigation .nav-previous,
 .navigation .nav-numbers,
@@ -3883,14 +3883,14 @@ span.cat-links .category-name:hover {
 .navigation .nav-links a,
 .navigation .page-numbers.current {
 	padding: 10px 15px;
-	color: #fff;
+	color: rgba(102, 252, 241, 1);
 }
 .navigation .page-numbers.current {
-    background-color: #333 !important;
-    border: 1px solid #333;
+    background-color: rgba(32, 40, 51, 1) !important;
+    border: 1px solid rgba(102, 252, 241, 1);
 }
 .navigation .nav-links a:hover {
-	background-color: #333;
+	background-color: rgba(70, 162, 159, 1);
 }
 .archive-blog-wrapper .navigation {
     margin-top: 1.5em;
@@ -3914,7 +3914,7 @@ span.cat-links .category-name:hover {
     transition: all 0.3s ease-in-out;
 }
 #infinite-handle span button:hover {
-	background-color: #333;
+	background-color: rgba(32, 40, 51, 1);
 }
 #infinite-handle span {
     background: transparent;
