@@ -423,8 +423,10 @@ html {
 body {
 	background: rgba(11, 12, 16, 1); /* Fallback for when there is no custom background color defined. */
 	background-image:linear-gradient(45deg, rgba(11,12,16,1) 0%,rgba(32,40,51,1) 50%,rgba(11,12,16,1) 51%,rgba(32,40,51,1) 100%);
-    font-family:Lobster, 'Oxygen', sans-serif;
+    font-family:BigShouldersDisplay-Regular, 'Oxygen', sans-serif;
     overflow-x: hidden;
+    font-size:1.4em;
+    letter-spacing:0.11em;
 }
 
 blockquote,
@@ -2848,7 +2850,6 @@ li.share-end {
 }
 .featured-post-title h2 {
     color: rgba(102, 252, 241, 1);
-    font-size: 40px;
     width: 90%;
     font-weight: 400;
     margin: 0;
@@ -3716,7 +3717,7 @@ span.comments-links a:before {
     padding: 15px 25px;
     margin: 0;
     width: 100%;
-    background: linear-gradient(to top,rgba(0, 0, 0, 0.77) 0,rgba(0, 0, 0, 0.03) 100%);
+    background: linear-gradient(to top,rgba(32, 40, 51, 0.77) 0,rgba(11, 12, 16, 0.03) 100%);
     color: rgba(197, 198, 200, 1);
 }
 .single .entry-meta>span:after {
@@ -4325,14 +4326,15 @@ ul.products img {
 	background-color: #fff;
 }
 .add_to_cart_button {
-    background-color: #5EABDF;
-    color: #fff;
+    background-color: rgba(11, 12, 16, 1);
+    border: 0.11em solid rgba(70, 162, 159, 1);
+    color: rgba(102, 252, 241, 1);
     padding: 10px 15px;
     display: inline-block;
 }
 .add_to_cart_button:hover {
-	background-color: #333;
-	color: #fff;
+	background-color: rgba(32, 40, 51, 1);
+	color: rgba(70, 162, 159, 1);
 }
 .images > img {
     width: 100%;
@@ -4625,15 +4627,15 @@ p.comment-form-rating label {
     margin-right: 5px;
 }
 .author-content .social-icons li a:before {
-    color: #aaa;
+    color: rgba(102, 252, 241, 1);
 }
 article p {
-    color: #FFFFB5;
+    color: rgba(197, 198, 200, 1);
 }
 .single p.tp-education-meta span:after {
     content: "|";
     padding-left: 5px;
-    color: #60686E;
+    color: rgba(197, 198, 200, 1);
 }
 .single p.tp-education-meta span:last-child:after {
     content: "";
@@ -4644,7 +4646,7 @@ article p {
 #comments label {
     display: block;
     margin-bottom: 10px;
-    color: #797979;
+    color: rgba(197, 198, 200, 1);
     font-weight: 500;
 }
 .comments-title,
@@ -4658,7 +4660,7 @@ article p {
     padding: 25px 30px;
 }
 .comment-notes {
-    color: #797979;
+    color: rgba(197, 198, 200, 1);
     font-weight: 500;
     margin-top: 0;
 }
@@ -4680,16 +4682,16 @@ article p {
 }
 #comments #submit {
     box-shadow: none;
-    background-color: #F55A5A;
-    color: #fff;
+    background-color: rgba(11, 12, 16, 1);
+    color: rgba(102, 252, 241, 1);
     width: auto;
-    border-color: #F55A5A;
+    border-color: rgba(70, 162, 159, 1);
     font-size: 13px;
     height: auto;
     padding: 15px;
 }
 #comments #submit:hover {
-	background-color: #de4848;
+	background-color: rgba(32, 40, 51, 1);
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-ms-transition: all 0.3s ease-in-out;
@@ -4718,9 +4720,9 @@ article p {
 }
 .comment-meta .url:after {
 	content: "";
-    background-color: #ccc;
+    background-color: rgba(11, 12, 16, 1);
     display: inline-block;
-    color: #FFFFB5;
+    color: rgba(197, 198, 200, 1);
     width: 1px;
     height: 18px;
     vertical-align: middle;
@@ -4736,13 +4738,13 @@ article p {
 	margin-bottom: 20px;
 }
 .reply a {
-	color: #666;
+	color: rgba(102, 252, 241, 1);
 	font-weight: 600;
 }
 .reply a:before {
     content: "\f112";
     font-family: "FontAwesome";
-    color: #BCBCBC;
+    color: rgba(102, 252, 241, 1);
     font-size: 12px;
     padding-right: 10px;
     vertical-align: top;
@@ -4755,7 +4757,7 @@ article p {
 .comment-meta .url {
     display: inline-block;
     text-transform: capitalize;
-    color: #FFFFB5;
+    color: rgba(197, 198, 200, 1);
     font-size: 16px;
     font-family: 'Oxygen', sans-serif;
 }
@@ -4782,7 +4784,7 @@ article img {
 }
 .comment-content p {
     font-weight: 400;
-    color: #FFFFB5;
+    color: rgba(197, 198, 200, 1);
     display: table;
 }
 ol.comment-list > li:last-child {
@@ -4793,7 +4795,7 @@ ol.comment-list > li:last-child {
 }
 .list-items ul li {
     font-weight: 500;
-    color: #797979;
+    color: rgba(197, 198, 200, 1);
     list-style-type: disc;
     margin-left: 3em;
     margin-bottom: 5px;
@@ -4809,18 +4811,18 @@ ol.comment-list > li:last-child {
     margin-bottom: 20px;
 }
 #related-posts {
-    background-color: #260D0A;
+    background-color: rgba(11, 12, 16, 1);
 }
 #related-posts .entry-content {
     padding: 0 20px;
 }
 .comment-respond input,
 .comment-respond textarea {
-    background-color: #E8EAEF;
+    background-color: rgba(32, 40, 51, 1);
     border-radius: 0;
     height: 45px;
     text-indent: 15px;
-    border-color: #E8EAEF;
+    border-color: rgba(70, 162, 159, 1);
     width: 100%;
 }
 input[type="comment-form-url"] {
@@ -4838,7 +4840,7 @@ input[type="comment-form-url"] {
     float: left;
 }
 p.comment-form-comment .fa {
-	background-color: #E8EAEF;
+	background-color: rgba(32, 40, 51, 1);
     padding: 20px;
 }
 p.comment-form-comment span {
@@ -4854,7 +4856,7 @@ p.form-submit input[type="submit"] {
     float: right;
     box-shadow: none;
     background-color: transparent;
-    border: 1px solid #ccc;
+    border: 1px solid rgba(70, 162, 159, 1);
     display: inline-block;
     margin-top: 30px;
     color: #8C8D93;
@@ -5284,10 +5286,10 @@ li .wide {
 ## 						Footer
 --------------------------------------------------------------*/
 .site-footer {
-	background-color: #293035;
+	background-color: rgba(32, 40, 51, 1);
 }
 .site-footer .widget-title {
-    color: #fff;
+    color: rgba(197, 198, 200, 1);
     margin-bottom: 25px;
 }
 .site-footer .article-title h2 {
@@ -5296,7 +5298,7 @@ li .wide {
 .site-footer .article-title h2 a,
 .site-footer .widget li a,
 .site-footer .site-title {
-    color: #aaa;
+    color: rgba(102, 252, 241, 1);
 }
 .widget_popular_category li a {
     font-weight: normal;
@@ -5326,7 +5328,7 @@ li .wide {
     font-weight: 400;
 }
 .bottom-footer {
-    background-color: #260D0A;
+    background-color: rgba(32, 40, 51, 1);
 }
 .bottom-footer .site-info p {
     margin: 0;
