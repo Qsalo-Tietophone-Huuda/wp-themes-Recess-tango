@@ -30,10 +30,6 @@ $options = RecessTango_get_theme_options();
 	<header class="entry-header">
 		<span class="cat-links">
           	<span class="screen-reader-text"><?php esc_html_e( 'Categories', 'RecessTango' ); ?></span>
-           	<?php $categories = get_the_category();
-				  foreach ( $categories as $category ) {
-				    echo '<a class="category-name" href="' . esc_url(get_category_link($category->term_id)) . '">' . esc_html( $category->name ) . '</a>';
-				  }  ?>
         </span><!-- .cat-links --> 
 		<?php
 		if ( is_single() ) :
