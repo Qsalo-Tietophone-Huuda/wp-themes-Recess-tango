@@ -2372,7 +2372,7 @@ section {
     height: 100%;
 }
 header.entry-header {
-    margin-bottom: 20px;
+    margin-bottom: 1%;
 }
 .entry-title {
     font-family: Lobster, Helvetica, Georgia, Times, "Times New Roman", sans-serif;
@@ -2927,13 +2927,27 @@ li.share-end {
 .featured-post-title .category-name:nth-child(3n) {
     background-color: rgba(11, 12, 16, 1);
 }
-.category-name {
+.featured-post-title .category-name {
 	background-color: rgba(32, 40, 51, 0.7);
     border: 0.11em rgba(70, 162, 159, 0.4) solid;
     border-radius: 0% 5% 5% 0%;
     box-shadow: 0em 0.11em 1em black inset;
     color: rgba(102, 252, 241, 1);
     padding: 6% 25px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.11em;
+    text-decoration: underline rgba(70, 162, 159, 1);
+    text-align:center;
+}
+.category-name {
+	background-color: rgba(32, 40, 51, 0.7);
+    border: 0.11em rgba(70, 162, 159, 0.4) solid;
+    border-radius: 0% 5% 5% 0%;
+    box-shadow: 0em 0.11em 1em black inset;
+    color: rgba(102, 252, 241, 1);
+    padding: 10px 25px;
     display: inline-block;
     font-size: 16px;
     font-weight: 600;
@@ -3723,7 +3737,7 @@ span.comments-links a:before {
 .hentry header .category-name,
 .cat-links a {
 	display: inline-block;
-    margin-bottom: 25px;
+    margin-bottom: 1%;
 }
 /*.archive.category article p.entry-meta,*/
 .has-post-thumbnail.hentry p.entry-meta {
@@ -3838,7 +3852,7 @@ span.comments-links a:before {
 	display: none;
 }
 .has-post-thumbnail.hentry .image-wrapper {
-	margin-bottom: 40px;
+	margin-bottom: 1%;
 }
 .btn-blue {
     background-color: rgba(11, 12, 16, 1);
