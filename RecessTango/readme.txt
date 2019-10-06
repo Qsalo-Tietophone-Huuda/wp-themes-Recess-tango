@@ -1,14 +1,12 @@
 === RecessTango ===
-Requires at least: 4.7
-Tested up to: 5.2.2
+Tested only on: 5.2.2
 Requires PHP: 5.6
-Stable tag: 1.0.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 Tags: translation-ready, custom-header, right-sidebar, theme-options, custom-menu, one-column, two-columns, custom-background, custom-logo, featured-image-header, footer-widgets, threaded-comments, education, news, e-commerce
 
-Link: https://themepalace.com/downloads/edumag
+Link: https://github.com/Qsalo-Tietophone-Huuda/wp-themes-Recess-tango/
 == Installation ==
 
 1. In your admin panel, go to Appearance > Themes and click the Add New button.
