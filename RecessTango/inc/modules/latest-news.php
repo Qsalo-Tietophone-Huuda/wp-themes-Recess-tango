@@ -83,7 +83,7 @@ if ( ! function_exists( 'RecessTango_get_latest_news_section_details' ) ) :
                 if ( has_post_thumbnail( $post_id ) ) {
                     $img_array = wp_get_attachment_image_src( get_post_thumbnail_id( $post_id ), 'RecessTango-featured-category-image' );
                 } else {
-                    $img_array[0] =  get_template_directory_uri().'/assets/uploads/no-featured-image-450x300.jpg';
+                    $img_array[0] =  get_template_directory_uri().'/assets/uploads/no-featured-image-450x300.png';
                 }
 
             
@@ -115,7 +115,7 @@ if ( ! function_exists( 'RecessTango_get_latest_news_section_details' ) ) :
                     if ( has_post_thumbnail( $post_id ) ) {
                         $img_array = wp_get_attachment_image_src( get_post_thumbnail_id( $post_id ), 'RecessTango-featured-category-image' );
                     } else {
-                        $img_array[0] =  get_template_directory_uri().'/assets/uploads/no-featured-image-450x300.jpg';
+                        $img_array[0] =  get_template_directory_uri().'/assets/uploads/no-featured-image-450x300.png';
                     }
 
                     $content[$cat_id][$i]['img_array']    = $img_array;

@@ -54,9 +54,7 @@ Animate.css
 
 == Images Used ==
 
-	Custom Header image
-	License: CC0 1.0 Universal (CC0 1.0)
-	https://pixabay.com/en/business-professional-teamwork-1219868/
+
 
 
 	Call to action
@@ -84,24 +82,21 @@ Animate.css
 	Unless otherwise specified, all the theme files, scripts and images are licensed under GNU General Public License Version 3,
 	License: GNU General Public License v3 or later
 	License URI: http://www.gnu.org/licenses/gpl-3.0.html
+
+
+
+== Thanks and credits to ==
+RecessTango is based on
+=== EduMag ===
+* By Theme Palace
 	EduMag WordPress Theme, Copyright 2017 @ Theme Palace
 	EduMag is distributed under the terms of the GNU General Public License v3
+        https://themepalacedemo.com/edumag/
+which is in turn is based on
+=== Underscores ===
+* By Automattic Inc
+    http://underscores.me/, (C) 2012-2016 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 
-
-== Credits ==
-=== EduMag ===
-
-* By Theme Palace
-
-
-EduMag theme is a modern magazine styled educational purpose responsive WordPress theme. It is easily customizable built using theme options based on customizer API with live preview. It is the preferred theme for numerous educational professional and magazine websites, such as those of educational academies like university, college, schools and specialized learning centers. It is flexible enough to use it for general purposes also. It provides numerous features like breadcrumbs, pagination, layout and sidebar controls, social media widget etc. It is WooCommerce compatible and translation ready theme.
-
-Check the demo at https://themepalacedemo.com/edumag/
-Theme Instructions at https://themepalace.com/theme-instructions/edumag.
-Support at https://themepalace.com/forum/edumag/
-
-EduMag WordPress Theme, Copyright @ Theme Palace88zjtbn9e2hbc<
-* Based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 
 * normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
 

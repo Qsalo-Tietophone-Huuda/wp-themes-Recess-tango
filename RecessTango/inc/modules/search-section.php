@@ -99,7 +99,7 @@ if ( ! function_exists( 'RecessTango_render_search_section' ) ) :
 
         foreach ( $content_details as $content ) :
         ?>
-            <section id="fixed-background" class="page-section wow fadeInDown" data-wow-delay="0.3s" data-wow-duration="0.3s" style="background-image: url('<?php echo ! empty( $content['img_array'] ) ? esc_url( $content['img_array'] ) : esc_url( get_template_directory_uri() . '/assets/uploads/success.jpg' ); ?>');">
+            <section id="fixed-background" class="page-section wow fadeInDown" data-wow-delay="0.3s" data-wow-duration="0.3s" style="background-image: url('<?php echo ! empty( $content['img_array'] ) ? esc_url( $content['img_array'] ) : esc_url( get_template_directory_uri() . '/assets/uploads/success.png' ); ?>');">
                 <div class="blue-overlay"></div>
                 <div class="container">
                     <header class="entry-header wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.5s">

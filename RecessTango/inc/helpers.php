@@ -377,7 +377,7 @@ if ( ! function_exists( 'RecessTango_header_image_meta_option' ) ) :
 
 					return get_the_post_thumbnail( $post_id, 'full', $attr = array( 'alt' => the_title_attribute( array( 'echo' => false, 'post' => $post_id ) ) ) );
 				} else{
-					return '<img src="'. esc_url( get_template_directory_uri().'/assets/uploads/no-featured-image-1200x400.jpg' ) . '" alt="'. esc_attr__( 'Banner Image', 'RecessTango' ) .'"/>';
+					return '<img src="'. esc_url( get_template_directory_uri().'/assets/uploads/no-featured-image-1200x400.png' ) . '" alt="'. esc_attr__( 'Banner Image', 'RecessTango' ) .'"/>';
 				}
 
 			}elseif ( '' == $header_image_meta && get_header_image() ) {
@@ -444,7 +444,7 @@ if ( ! function_exists( 'RecessTango_get_thumbnail_image' ) ) :
 				if( has_post_thumbnail() ){
 					the_post_thumbnail( 'RecessTango-blog-images',  array( 'alt' => the_title_attribute( 'echo=0' ) ) );
 				} else { 
-					echo '<img  src="'. esc_url( get_template_directory_uri() .'/assets/uploads/no-featured-image-175x230.jpg') .'" alt="'. the_title_attribute() .'">';
+					echo '<img  src="'. esc_url( get_template_directory_uri() .'/assets/uploads/no-featured-image-175x230.png') .'" alt="'. the_title_attribute() .'">';
 				}
 			?>
 			</a>
@@ -457,7 +457,7 @@ if ( ! function_exists( 'RecessTango_get_thumbnail_image' ) ) :
 				if( has_post_thumbnail() ){
 					the_post_thumbnail( 'RecessTango-archive-search-image',  array( 'alt' => the_title_attribute( 'echo=0' ) ) );
 				}else {
-					echo '<img  src="'. esc_url( get_template_directory_uri() .'/assets/uploads/no-featured-image-350x265.jpg') .'" alt="'. the_title_attribute() .'">';
+					echo '<img  src="'. esc_url( get_template_directory_uri() .'/assets/uploads/no-featured-image-350x265.png') .'" alt="'. the_title_attribute() .'">';
 				}
 			?>
 			</a>
@@ -545,7 +545,7 @@ if( !function_exists( 'RecessTango_get_related_posts' ) ) :
 		        if ( has_post_thumbnail( $related_post->ID ) ) {
 		            $img_array = wp_get_attachment_image_src( get_post_thumbnail_id( $related_post->ID ), 'RecessTango-featured-category-image' );
 		        } else {
-		            $img_array = array( get_template_directory_uri() . '/assets/uploads/no-featured-image-450x300.jpg' );
+		            $img_array = array( get_template_directory_uri() . '/assets/uploads/no-featured-image-450x300.png' );
 		        }
 		        $post_title = get_the_title( $related_post->ID );
 		        $post_url   = get_permalink( $related_post->ID );
