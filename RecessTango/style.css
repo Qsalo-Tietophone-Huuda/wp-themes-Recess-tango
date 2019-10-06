@@ -5960,6 +5960,9 @@ li .wide {
 	    width: 100%;
 	    float: none;
 	}
+#featured-category .column-wrapper {
+        width: 100%;
+}
 	.featured-post-image {
 	    padding: 175px 0;
 	}
