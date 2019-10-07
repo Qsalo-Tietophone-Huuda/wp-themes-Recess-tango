@@ -299,12 +299,6 @@ function RecessTango_scripts() {
 	// Load magnific popup css
 	wp_enqueue_style( 'magnific-popup', get_template_directory_uri() .'/assets/plugins/css/magnific-popup.min.css', array(), '' );
 
-	// Load slick theme css
-	wp_enqueue_style( 'slick-theme', get_template_directory_uri() .'/assets/plugins/css/slick-theme.min.css', array(), '' );
-
-	// Load slick css
-	wp_enqueue_style( 'slick', get_template_directory_uri() .'/assets/plugins/css/slick.min.css', array(), '' );
-
 	// blocks
 	wp_enqueue_style( 'RecessTango-blocks', get_template_directory_uri() . '/assets/css/blocks.min.css', array(), '' );
 
@@ -333,7 +327,9 @@ function RecessTango_scripts() {
 
 	// Load slick js
 	wp_enqueue_script( 'jquery-slick', get_template_directory_uri() . '/assets/plugins/js/slick.min.js', array( 'jquery' ), '1.6.0', true );
-
+    // Load owl carousel
+	wp_enqueue_script( 'owl-carousel', get_template_directory_uri() . '/assets/plugins/js/owl.carousel.min.js', array( 'jquery' ), '2.2.3', true );
+	
 	// Load magnific popup js
 	wp_enqueue_script( 'jquery-magnific-popup', get_template_directory_uri() . '/assets/plugins/js/jquery.magnific-popup.min.js', array( 'jquery' ), '1.1.0', true );
 

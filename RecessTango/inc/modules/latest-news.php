@@ -268,51 +268,50 @@ if ( ! function_exists( 'RecessTango_render_latest_news_section' ) ) :
                                 $content_detail =  array_splice( $content_detail,1, count( $content_detail ) ); // remove first content element from array
                             if( !empty( $content_detail ) ) : ?>
                             <div class="column-wrapper">
-                                <div class="regular widget widget_popular_views" data-slick="{"slidesToShow":1, "slidesToScroll":1, "infinite":false, "speed":800, "dots":false, "arrows":true, "autoplay":true, "fade":false, "draggable":false }">
+                                <div class="regular widget widget_popular_views">
+                                        <div class="slider-item">
+                                            <ul>
+                                                <?php
+                                                    $index = 1;                  
+                                                    $count = count( $content_detail );
+                                                    foreach ( $content_detail as $key => $content ) { ?>
+                                                    <li class="has-post-thumbnail">
+                                                        <div class="image-wrapper">
+                                                            <a href="<?php echo esc_url( $content['url'] ); ?>"><img src="<?php echo esc_url( $content['img_array'][0] ); ?>" alt="<?php echo esc_attr( $content['title'] );?>"></a>
+                                                        </div><!-- end .image-wrapper -->
 
-                                    <div class="slider-item">
-                                        <ul>
-                                            <?php
-                                                $index = 1;                  
-                                                $count = count( $content_detail );
-                                                foreach ( $content_detail as $key => $content ) { ?>
-                                                <li class="has-post-thumbnail">
-                                                    <div class="image-wrapper">
-                                                        <a href="<?php echo esc_url( $content['url'] ); ?>"><img src="<?php echo esc_url( $content['img_array'][0] ); ?>" alt="<?php echo esc_attr( $content['title'] );?>"></a>
-                                                    </div><!-- end .image-wrapper -->
+                                                        <div class="article-contents-wrapper">
+                                                            <?php if( !empty( $content['title'] ) ){ ?>
+                                                            <div class="article-title">
+                                                                <h2><a href="<?php echo esc_url( $content['url'] ); ?>"><?php echo esc_html( $content['title'] ); ?></a></h2>
+                                                            </div><!-- .article-title -->
+                                                            <?php } ?>
+                                                            <div class="article-entry-meta">
+                                                                <time><?php echo date_i18n( "M d, Y", strtotime( $content['date'] ) ); ?></time>
+                                                            </div><!-- .article-desc -->
+                                                        </div><!-- .articles-contents-wrapper -->
+                                                    </li>
+                                                <?php 
+                                                if( $count > 5 ) {
+                                                    $diviser = 5;
+                                                } else {
+                                                    $diviser = $count;
+                                                }
 
-                                                    <div class="article-contents-wrapper">
-                                                        <?php if( !empty( $content['title'] ) ){ ?>
-                                                        <div class="article-title">
-                                                            <h2><a href="<?php echo esc_url( $content['url'] ); ?>"><?php echo esc_html( $content['title'] ); ?></a></h2>
-                                                        </div><!-- .article-title -->
-                                                        <?php } ?>
-                                                        <div class="article-entry-meta">
-                                                            <time><?php echo date_i18n( "M d, Y", strtotime( $content['date'] ) ); ?></time>
-                                                        </div><!-- .article-desc -->
-                                                    </div><!-- .articles-contents-wrapper -->
-                                                </li>
-                                            <?php 
-                                            if( $count > 5 ) {
-                                                $diviser = 5;
-                                            } else {
-                                                $diviser = $count;
+                                                if( ( $index % $diviser == 0 ) ){
+                                                    if( $count == $index  ){ 
+                                                        echo '</ul></div><!-- .slider-item -->';
+                                                    }
+                                                    else {
+                                                        echo  '</ul></div><div class="slider-item"><ul>';
+                                                    }
+                                                }                                            
+                                                $index++;
                                             }
-
-                                            if( ( $index % $diviser == 0 ) ){
-                                                if( $count == $index  ){ 
-                                                    echo '</ul></div><!-- .slider-item -->';
-                                                }
-                                                else {
-                                                    echo  '</ul></div><div class="slider-item"><ul>';
-                                                }
-                                            }                                            
-                                            $index++;
-                                        }
-                                        $search_array = array( 7,8,9,10 );
-                                        if( in_array( $index, $search_array ) ){
-                                            echo '</ul></div><!-- .slider-item -->';
-                                        }?>                         
+                                            $search_array = array( 7,8,9,10 );
+                                            if( in_array( $index, $search_array ) ){
+                                                echo '</ul></div><!-- .slider-item -->';
+                                            }?>
                                 </div><!-- .regular -->
                             </div><!-- .column-wrapper -->
                             <?php endif; ?>

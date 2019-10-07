@@ -126,8 +126,7 @@ if ( ! function_exists( 'RecessTango_render_popular_articles_section' ) ) :
                     
                         
                     <div class="tab-content active">
-                        <div class="regular row" data-slick='{"slidesToShow": 2, "slidesToScroll": 1, "infinite": false, "speed": 800, "dots": false, "arrows":true, "autoplay": true, "fade": false, "draggable": false }'>
-
+                        <div class="owl-carousel owl-theme owl-drag">
                             <?php foreach ( $content_details as $content ) : ?>
                                         <div class="slider-item">    
                                             <div class="image-wrapper">
@@ -164,8 +163,18 @@ if ( ! function_exists( 'RecessTango_render_popular_articles_section' ) ) :
 
                                     </div><!-- end .article-contents-wrapper -->
                             </div><!-- .slider-item -->
-                            <?php endforeach; ?>                       
-                        </div><!-- .regular -->
+                            <?php endforeach; ?>              
+                        </div>
+                        <script>
+                        jQuery(function(){
+                            jQuery(document).ready(function(){
+                            jQuery(".owl-carousel").owlCarousel({
+                                nav:false,
+                                items:1}
+                                );
+                            });
+                        });
+                        </script>
                     </div><!-- #all-popular-article  -->
 
                     
