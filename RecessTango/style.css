@@ -22,8 +22,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 
 /*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
+>>> TABLE OF CONTENTS: I will soon rewrite whole css differently. Using logic of actions and features instead logic of functionality.
 ----------------------------------------------------------------
+# Containers
+    --- Module Container, Div Containers, Everything which try to contain something. -----
+    #ColumnContainer
+        -- It's flex container meant to put items in columns.
+
 # Normalize
 # Typography
 # Elements
@@ -66,7 +71,16 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Responsive
 
 --------------------------------------------------------------*/
-
+/** CONTAINER **/
+/** Action: Containment, To contain **/
+/** Feature: Flexbox **/
+.column-container{
+    display:flex;
+    flex-flow:column;
+	width: 98.5%;
+	max-width: 80rem;
+	margin: 0 auto;
+}
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -2789,7 +2803,6 @@ time:before {
 #fixed-background {
 	background-attachment: fixed;
 	background-size: cover;
-	padding: 12rem 0;
 }
 #fixed-background .entry-header {
 	color: rgba(197, 198, 200, 1);
@@ -4948,9 +4961,6 @@ li .wide {
 	#masthead .pull-right {
 		width: 65%;
 		  
-	}
-	#fixed-background form {
-		width: 60%;
 	}
 	.topbar-toggle {
 		display: none;

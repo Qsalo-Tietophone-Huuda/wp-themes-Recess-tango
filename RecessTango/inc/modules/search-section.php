@@ -101,7 +101,7 @@ if ( ! function_exists( 'RecessTango_render_search_section' ) ) :
         ?>
             <section id="fixed-background" class="page-section wow fadeInDown" data-wow-delay="0.3s" data-wow-duration="0.3s" style="background-image: url('<?php echo ! empty( $content['img_array'] ) ? esc_url( $content['img_array'] ) : esc_url( get_template_directory_uri() . '/assets/uploads/success.png' ); ?>');">
                 <div class="blue-overlay"></div>
-                <div class="container">
+                <div class="column-container">
                     <header class="entry-header wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.5s">
                         <h2 class="entry-title"><?php echo esc_html( $content['title'] ); ?></h2>
                     </header><!--.entry-header-->
