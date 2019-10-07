@@ -81,6 +81,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	max-width: 80rem;
 	margin: 0 auto;
 }
+@media screen and (max-width: 767px) {
+    .container{
+        flex-flow:column;
+    }
+}
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
