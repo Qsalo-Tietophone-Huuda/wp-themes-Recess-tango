@@ -204,14 +204,7 @@ function cfct_files($path) {
 }
 function set_up_cssCrush() {
 	require_once 'plugins/css-crush/CssCrush.php';
-    $options['doc_root'] = get_template_directory_uri();
-    $options['output_dir'] = $options['doc_root'].'/cache/';
-    $options['rewrite_import_urls'] = false;
-    echo  $options['doc_root'];
-    echo csscrush_get($options);
-	$cssTemplate = $options['doc_root'].'/style.css';
-
-	return '/cache'.csscrush_file($cssTemplate, $options);
+	return '/'.csscrush_file('wp-content/themes/RecessTango/style.css');
 }
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
