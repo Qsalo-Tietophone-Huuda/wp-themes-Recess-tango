@@ -146,8 +146,73 @@ if ( ! function_exists( 'RecessTango_setup' ) ) :
 		add_theme_support( 'wp-block-styles' );
 	}
 endif;
-add_action( 'after_setup_theme', 'RecessTango_setup' );
+/**
+ * Load theme plugins
+ * 
+**/
+function cfct_load_plugins() {
+    $files = cfct_files(CFCT_PATH.'plugins');
+    if (count($files)) {
+        foreach ($files as $file) {
+            if (file_exists(CFCT_PATH.'plugins/'.$file)) {
+                include_once(CFCT_PATH.'plugins/'.$file);
+            }
+// child theme support
+            if (file_exists(STYLESHEETPATH.'/plugins/'.$file)) {
+                include_once(STYLESHEETPATH.'/plugins/'.$file);
+            }
+        }
+    }
+}
 
+/**
+ * Get a list of php files within a given path as well as files in corresponding child themes
+ * 
+ * @param sting $path Path to the directory to search
+ * @return array Files within the path directory
+ * 
+**/
+function cfct_files($path) {
+    $files = apply_filters('cfct_files_'.$path, false);
+    if ($files) {
+        return $files;
+    }
+    $files = wp_cache_get('cfct_files_'.$path, 'cfct');
+    if ($files) {
+        return $files;
+    }
+    $files = array();
+    $paths = array($path);
+    if (STYLESHEETPATH.'/' != CFCT_PATH) {
+        // load child theme files
+        $paths[] = STYLESHEETPATH.'/'.str_replace(CFCT_PATH, '', $path);
+    }
+    foreach ($paths as $path) {
+        if (is_dir($path) && $handle = opendir($path)) {
+            while (false !== ($file = readdir($handle))) {
+                $path = trailingslashit($path);
+                if (is_file($path.$file) && strtolower(substr($file, -4, 4)) == ".php") {
+                    $files[] = $file;
+                }
+            }
+            closedir($handle);
+        }
+    }
+    $files = array_unique($files);
+    wp_cache_set('cfct_files_'.$path, $files, 'cfct', 3600);
+    return $files;
+}
+function set_up_cssCrush() {
+	require_once 'plugins/css-crush/CssCrush.php';
+    $options['doc_root'] = get_template_directory_uri();
+    $options['output_dir'] = $options['doc_root'].'/cache/';
+    $options['rewrite_import_urls'] = false;
+    echo  $options['doc_root'];
+    echo csscrush_get($options);
+	$cssTemplate = $options['doc_root'].'/style.css';
+
+	return '/cache'.csscrush_file($cssTemplate, $options);
+}
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
@@ -282,14 +347,12 @@ endif;
  * Enqueue scripts and styles.
  */
 function RecessTango_scripts() {
-
 	$options = RecessTango_get_theme_options(); // get theme options
 	// Add custom fonts, used in the main stylesheet.
 	wp_enqueue_style( 'RecessTango-fonts', RecessTango_fonts_url(), array(), null );
 
 	// Load animate css
 	wp_enqueue_style( 'animate', get_template_directory_uri() .'/assets/plugins/css/animate.min.css', array(), '' );
-
 	// Load font awesome css
 	wp_enqueue_style( 'font-awesome', get_template_directory_uri() .'/assets/plugins/css/font-awesome.min.css', array(), '4.6.3' );
 
@@ -302,14 +365,11 @@ function RecessTango_scripts() {
 	// blocks
 	wp_enqueue_style( 'RecessTango-blocks', get_template_directory_uri() . '/assets/css/blocks.min.css', array(), '' );
 
-	wp_enqueue_style( 'RecessTango-style', get_stylesheet_uri() );
-
 	// Load theme color layout css
 	$theme_color = !empty( $options['theme_color'] ) ? $options['theme_color'] : 'blue';
 
 	wp_enqueue_style( 'RecessTango-theme-color', get_template_directory_uri() .'/assets/css/'. esc_attr( $theme_color ) .'.min.css', array(), '' );
-
-
+	wp_enqueue_style( 'RecessTango-style', set_up_cssCrush(), array(), '' );
 	// Load JS files
 
 	// Load the html5 shiv.

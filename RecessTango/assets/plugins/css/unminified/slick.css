@@ -2,8 +2,7 @@
 .slick-slider
 {
     position: relative;
-
-    display: block;
+    display: flex;
     box-sizing: border-box;
 
     -webkit-user-select: none;
@@ -22,7 +21,7 @@
 {
     position: relative;
 
-    display: block;
+    display: flex;
     overflow: hidden;
 
     margin: 0;
@@ -53,8 +52,6 @@
     position: relative;
     top: 0;
     left: 0;
-
-    display: block;
     margin-left: auto;
     margin-right: auto;
 }
@@ -62,7 +59,6 @@
 .slick-track:after
 {
     display: table;
-
     content: '';
 }
 .slick-track:after
@@ -100,7 +96,8 @@
 }
 .slick-initialized .slick-slide
 {
-    display: block;
+    display: flex;;
+    width:50rem;
 }
 .slick-loading .slick-slide
 {
