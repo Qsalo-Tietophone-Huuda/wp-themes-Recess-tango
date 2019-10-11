@@ -10,8 +10,11 @@ wp-content/uploads/
 wp-content/mu-plugins/
 wp-content/wp-cache-config.php
 wp-content/plugins/hello.php
-.csscrush
-style.crush.css
+/RecessTango/.csscrush
+/RecessTango/style.crush.css
+/RecessTango/.directory
+/RecessTango/assets/css/.csscrush
+/RecessTango/assets/css/current.css
 
 /.htaccess
 /license.txt
