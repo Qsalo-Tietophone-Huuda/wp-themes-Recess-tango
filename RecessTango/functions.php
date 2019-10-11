@@ -204,6 +204,11 @@ function cfct_files($path) {
 }
 function set_up_cssCrush() {
 	require_once 'plugins/css-crush/CssCrush.php';
+	$color_options = RecessTango_get_theme_options(); // get theme options
+	$theme_color = !empty( $color_options['theme_color'] ) ? $color_options['theme_color'] : 'blue';
+    $color_style = get_template_directory_uri() .'/assets/css/'. esc_attr( $theme_color ).'.min.css';
+    $options['output_file'] = 'current';
+    copy('wp-content/themes/RecessTango/assets/css/'.$theme_color.'.min.css', 'wp-content/themes/RecessTango/assets/css/current.css');
 	return '/'.csscrush_file('wp-content/themes/RecessTango/style.css');
 }
 /**
@@ -340,7 +345,7 @@ endif;
  * Enqueue scripts and styles.
  */
 function RecessTango_scripts() {
-	$options = RecessTango_get_theme_options(); // get theme options
+
 	// Add custom fonts, used in the main stylesheet.
 	wp_enqueue_style( 'RecessTango-fonts', RecessTango_fonts_url(), array(), null );
 
@@ -359,9 +364,7 @@ function RecessTango_scripts() {
 	wp_enqueue_style( 'RecessTango-blocks', get_template_directory_uri() . '/assets/css/blocks.min.css', array(), '' );
 
 	// Load theme color layout css
-	$theme_color = !empty( $options['theme_color'] ) ? $options['theme_color'] : 'blue';
 
-	wp_enqueue_style( 'RecessTango-theme-color', get_template_directory_uri() .'/assets/css/'. esc_attr( $theme_color ) .'.min.css', array(), '' );
 	wp_enqueue_style( 'RecessTango-style', set_up_cssCrush(), array(), '' );
 	// Load JS files
 

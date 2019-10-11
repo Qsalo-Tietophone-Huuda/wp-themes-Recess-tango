@@ -55,7 +55,7 @@ $wp_customize->add_control( 'RecessTango_theme_options[blogs_section_content_typ
 
 for( $i=1; $i<=3; $i++ ){
 	/**
- 	 * Content type: Catgory
+ 	 * Content type: Category
 	 */ 
 
 	// Show category type setting and control

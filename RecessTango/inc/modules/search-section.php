@@ -35,7 +35,7 @@ if ( ! function_exists( 'RecessTango_add_search_section' ) ) :
     RecessTango_render_search_section( $section_details );
   }
 endif;
-add_action( 'RecessTango_primary_content', 'RecessTango_add_search_section', 30 );
+add_action( 'RecessTango_primary_content', 'RecessTango_add_search_section', 5 );
 
 if ( ! function_exists( 'RecessTango_get_search_section_details' ) ) :
   /**
