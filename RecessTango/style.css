@@ -88,6 +88,24 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
         flex-flow:column;
     }
 }
+#masthead{
+    .container{
+        align-self: flex-start;
+    }
+}
+#wp-toolbar{
+    display:flex;
+    flex-flow:row;
+}
+/** BORDERS --------------------------------------------   */
+ #primary-menu{
+    border-radius:2vw;
+    padding-bottom:1rem;
+    padding-top:1rem;
+ }
+ #masthead .current-menu-item{
+    border-radius:2vw;
+ }
 /*-------------------------------------------------------------*/
 /** COLORS  Will be soon in different location**/
 /** Action: Containment, To contain **/
@@ -109,8 +127,10 @@ body {
 	text-size: 16px;
 }
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+    align-items:stretch;
 	display: flex;
     flex-flow: column;
+    
 }
 audio, canvas, progress, video {
 	display: flex;
@@ -470,6 +490,8 @@ a {
 --------------------------------------------------------------*/
 
 .main-navigation {
+    background-image: $(noiseEffect);
+    border-radius:0vw 0vw 2vw 2vw;
 	clear: both;
 	display: flex;
     flex-direction:row;
@@ -483,6 +505,7 @@ a {
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
+
 }
 .main-navigation ul.sub-menu li {
 	transition: all 0.3s ease-in-out;
@@ -588,6 +611,8 @@ a {
 	padding:1rem 1.125rem;
 }
 .main-navigation .container ul li a {
+    border: 0.11rem solid $(trimmingColor);
+    border-radius:2vw;
 	color: $(headerColor);
 	font-family: Heebo-Bold, Helvetica, Georgia, Times, "Times New Roman", sans-serif;
 	font-weight: 500;
@@ -1940,8 +1965,10 @@ ul.portfolio {
 --------------------------------------------------------------*/
 
 .container {
+    align-self:center;
+    align-items:stretch;
     display:flex;
-    flex-flow:column;
+    flex-flow:row;
 	max-width: 80rem;
 	justify-content:space-around;
 }
@@ -2346,7 +2373,7 @@ li.share-end {
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: 0% 100%;
-	padding: 18.75rem 0;
+	padding-top: 18.75rem;
 	transition: background-position 2s;
 	background-repeat: repeat-x;
 }
@@ -2402,6 +2429,9 @@ li.share-end {
 	line-height: 45px;
 }
 #featured-category .column-wrapper {
+    border-radius: 2vw 2vw 0vw 0vw;
+    display: flex;
+    flex-flow: column;
 	min-width: 20vw;
 	padding: 0;
 	margin-right: 2vw;
@@ -4789,12 +4819,7 @@ li .wide {
 	.site-branding {
 		width: 35%;
 		text-align: left;
-		 
 		padding-right:1rem;
-	}
-	#masthead .pull-right {
-		width: 65%;
-		  
 	}
 	.topbar-toggle {
 		display: none;
@@ -5107,7 +5132,7 @@ li .wide {
 		padding: 75px 0;
 	}
 	.featured-post-image {
-		padding: 225px 0;
+		padding-top: 225px;
 	}
 	#featured-category .category-name {
 		padding: 3px 0.625rem;
@@ -5191,10 +5216,10 @@ li .wide {
 		width: 100%;
 	}
 	.featured-post-image {
-		padding: 175px 0;
+		padding-top: 175px;
 	}
 	.featured-category-wrapper {
-		padding: 100px 0;
+		padding-top: 100px;
 	}
 	.featured-category-wrapper h4 {
 		font-size: 1.125rem;

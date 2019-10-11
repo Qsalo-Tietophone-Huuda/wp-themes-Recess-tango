@@ -93,6 +93,32 @@ if ( ! function_exists( 'RecessTango_header_start' ) ) :
 endif;
 add_action( 'RecessTango_header_action', 'RecessTango_header_start', 10 );
 
+if ( ! function_exists( 'RecessTango_site_navigation' ) ) :
+	/**
+	 * Site navigation codes
+	 *
+	 * @since RecessTango 0.01
+	 *
+	 */
+	function RecessTango_site_navigation() { ?>
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<div class="container">
+				<?php 
+					$args = array( 
+						'theme_location' => 'primary',
+						'menu_id' => 'primary-menu',
+						'container' => 'div',
+						'fallback_cb' => 'RecessTango_menu_fallback_cb',
+					);
+					wp_nav_menu( $args ); ?>
+			</div><!-- .container -->
+		</nav><!-- #site-navigation -->
+
+	<?php
+	}
+endif;
+add_action( 'RecessTango_header_action', 'RecessTango_site_navigation', 20 );
+
 if ( ! function_exists( 'RecessTango_site_branding' ) ) :
 	/**
 	 * Site branding codes
@@ -149,34 +175,7 @@ if ( ! function_exists( 'RecessTango_site_branding' ) ) :
 		<?php
 	}
 endif;
-add_action( 'RecessTango_header_action', 'RecessTango_site_branding', 20 );
-
-if ( ! function_exists( 'RecessTango_site_navigation' ) ) :
-	/**
-	 * Site navigation codes
-	 *
-	 * @since RecessTango 0.01
-	 *
-	 */
-	function RecessTango_site_navigation() { ?>
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<div class="container">
-				<?php 
-					$args = array( 
-						'theme_location' => 'primary',
-						'menu_id' => 'primary-menu',
-						'container' => 'div',
-						'fallback_cb' => 'RecessTango_menu_fallback_cb',
-					);
-					wp_nav_menu( $args ); ?>
-			</div><!-- .container -->
-		</nav><!-- #site-navigation -->
-
-	<?php
-	}
-endif;
-add_action( 'RecessTango_header_action', 'RecessTango_site_navigation', 30 );
-
+add_action( 'RecessTango_header_action', 'RecessTango_site_branding', 30 );
 
 if ( ! function_exists( 'RecessTango_append_search' ) ) :
 	/**
